@@ -9,6 +9,10 @@ vim.opt.number = true
 --  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
 
+-- Replaced tabs with spaces, neovim is a little more predictable.
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+
 -- Code folding options
 -- vim.opt.foldmethod = 'manual'
 vim.opt.foldcolumn = '1' -- Using 0 is not bad

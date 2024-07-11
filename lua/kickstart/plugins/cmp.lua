@@ -47,6 +47,7 @@ return {
             luasnip.lsp_expand(args.body)
           end,
         },
+
         completion = { completeopt = 'menu,menuone,noinsert' },
 
         -- For an understanding of why these mappings were
@@ -106,6 +107,14 @@ return {
           { name = 'luasnip' },
           { name = 'path' },
         },
+        -- TJ setup dadbod
+        -- https://www.youtube.com/watch?v=ALGBuFLzDSA
+        cmp.setup.filetype({ 'sql' }, {
+          sources = {
+            { name = 'vim-dadbod-completion' },
+            { name = 'buffer' },
+          },
+        }),
       }
     end,
   },

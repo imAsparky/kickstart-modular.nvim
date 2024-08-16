@@ -21,6 +21,7 @@ return {
       require('which-key').setup()
 
       -- Document existing key chains
+<<<<<<< HEAD
       local wk = require 'which-key'
       wk.add {
         { '<leader>c', group = '[C]ode' },

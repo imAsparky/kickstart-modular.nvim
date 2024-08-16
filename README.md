@@ -81,7 +81,6 @@ If you're using `cmd.exe`:
 
 ```
 git clone https://github.com/imAsparky/kickstart-modular.nvim.git %userprofile%\AppData\Local\nvim\
-
 ```
 
 If you're using `powershell.exe`

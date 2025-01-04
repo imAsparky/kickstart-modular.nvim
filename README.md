@@ -59,7 +59,8 @@ fork to your machine using one of the commands below, depending on your OS.
 
 > **NOTE**
 > Your fork's url will be something like this:
-> `https://github.com/<your_github_username>/kickstart-modular.nvim.git`
+> Use the latest branch to store your changes and merge master into latest after a fork sync.
+> `https://github.com/<your_github_username>/kickstart-modular.nvim.git:branch=latest`
 
 You likely want to remove `lazy-lock.json` from your fork's `.gitignore` file
 too - it's ignored in the kickstart repo to make maintenance easier, but it's
@@ -68,12 +69,12 @@ too - it's ignored in the kickstart repo to make maintenance easier, but it's
 #### Clone kickstart.nvim
 > **NOTE**
 > If following the recommended step above (i.e., forking the repo), replace
-> `dam9000` with `<your_github_username>` in the commands below
+> `imAsparky` with `<your_github_username>` in the commands below
 
 <details><summary> Linux and Mac </summary>
 
 ```sh
-git clone https://github.com/dam9000/kickstart-modular.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/imAsparky/kickstart-modular.nvim.git:branch=latest "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 </details>
@@ -83,13 +84,13 @@ git clone https://github.com/dam9000/kickstart-modular.nvim.git "${XDG_CONFIG_HO
 If you're using `cmd.exe`:
 
 ```
-git clone https://github.com/dam9000/kickstart.nvim.git "%localappdata%\nvim"
+git clone https://github.com/imAsparky/kickstart.nvim.git:branch=latest "%localappdata%\nvim"
 ```
 
 If you're using `powershell.exe`
 
 ```
-git clone https://github.com/dam9000/kickstart.nvim.git "${env:LOCALAPPDATA}\nvim"
+git clone https://github.com/imAsparky/kickstart.nvim.git:branch=latest "${env:LOCALAPPDATA}\nvim"
 ```
 
 </details>
